@@ -1,6 +1,6 @@
 {
-    "name": "chabter/laravel-dutch-zipcode-lookup",
-    "description": "Laravel wrapper for dutch ZIP code (postcode) lookup using the publicly available PDOK Locatieserver v3.",
+    "name": "chabter/laravel-dutch-postalcode-lookup",
+    "description": "Laravel wrapper to perform a Dutch postal code (postcode) lookup using the publicly available PDOK Locatieserver v3.",
     "type": "library",
     "license": "MIT",
     "authors": [

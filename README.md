@@ -1,8 +1,8 @@
 # Laravel Dutch postal code (postcode) lookup
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/chabter/laravel-dutch-postalcode-lookup.svg)](https://packagist.org/packages/chabter/laravel-dutch-zipcode-lookup)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/chabter/laravel-dutch-postalcode-lookup.svg)](https://packagist.org/packages/chabter/laravel-dutch-zipcode-lookup)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/chabter/laravel-dutch-postalcode-lookup.svg)](https://packagist.org/packages/chabter/laravel-dutch-postalcode-lookup)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/chabter/laravel-dutch-postalcode-lookup.svg)](https://packagist.org/packages/chabter/laravel-dutch-postalcode-lookup)
 [![Software License](https://img.shields.io/packagist/l/chabter/laravel-dutch-postalcode-lookup.svg)](LICENSE.md)
-[![Total Downloads](https://img.shields.io/packagist/dt/chabter/laravel-dutch-postalcode-lookup.svg)](https://packagist.org/packages/chabter/postcode-autosuggest)
+[![Total Downloads](https://img.shields.io/packagist/dt/chabter/laravel-dutch-postalcode-lookup.svg)](https://packagist.org/packages/chabter/laravel-dutch-postalcode-lookup)
 
 This package is a [Laravel](https://laravel.com) wrapper of [Nationaal Georegister provider for Geocoder PHP](https://github.com/swisnl/geocoder-php-nationaal-georegister-provider), which can be used to lookup a postal code to return the corresponding street and city. 
 
