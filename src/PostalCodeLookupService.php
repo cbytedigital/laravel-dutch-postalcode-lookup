@@ -7,7 +7,6 @@ use Exception;
 use Geocoder\Collection;
 use Http\Adapter\Guzzle6\Client;
 use Geocoder\Query\GeocodeQuery;
-use Chabter\PostalCodeLookup\Models\Address;
 use Http\Client\HttpClient;
 use Swis\Geocoder\NationaalGeoregister\NationaalGeoregister;
 
@@ -45,9 +44,9 @@ class PostalCodeLookupService
      *
      * @param string $postalCode
      * @param string|null $houseNumber
-     * @return Address|null
+     * @return Models\Address|null
      */
-    public function lookup(string $postalCode, ?string $houseNumber = null) : ?Address
+    public function lookup(string $postalCode, ?string $houseNumber = null) : ?Models\Address
     {
         $postalCode = Format::postalCode($postalCode);
         if (! is_null($houseNumber)) {
@@ -67,9 +66,9 @@ class PostalCodeLookupService
      * @param ?Collection $result
      * @param string $postalCode
      * @param string|null $houseNumber
-     * @return Address|null
+     * @return Models\Address|null
      */
-    private function handleQueryResult(?Collection $result, string $postalCode, ?string $houseNumber = null) : ?Address
+    private function handleQueryResult(?Collection $result, string $postalCode, ?string $houseNumber = null) : ?Models\Address
     {
         if (! is_null($result)) {
             $location = collect($result->all())
@@ -81,7 +80,7 @@ class PostalCodeLookupService
                 });
 
             if (! is_null($location)) {
-                return Address::fromLocation($location);
+                return Models\Address::fromLocation($location);
             }
         }
 
