@@ -5,8 +5,8 @@ namespace Chabter\PostalCodeLookup;
 use Chabter\PostalCodeLookup\Helpers\Format;
 use Exception;
 use Geocoder\Collection;
-use Http\Adapter\Guzzle6\Client;
 use Geocoder\Query\GeocodeQuery;
+use Http\Adapter\Guzzle7\Client;
 use Http\Client\HttpClient;
 use Swis\Geocoder\NationaalGeoregister\NationaalGeoregister;
 
