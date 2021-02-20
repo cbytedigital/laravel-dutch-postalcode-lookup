@@ -10,7 +10,7 @@ The publicly available [PDOK Locatieserver v3 (Dutch)](https://www.pdok.nl/diens
 
 ## Installation
 
-This package requires PHP 7.4 and Laravel 6.0 or higher. Use composer to install this package:
+Use composer to install this package:
 
 ```bash
 $ composer require chabter/laravel-dutch-postalcode-lookup
@@ -46,6 +46,15 @@ Run the tests with:
 ```bash
 $ composer test
 ```
+
+## Support
+
+| Version | Laravel Version | PHP Version |
+|---- |----|----|
+| 2.x | 8.x | ^7.3\|^8.0 |
+| 1.x | 7.x | \>=7.2 |
+
+Version 1.x will also work with Laravel 8 if Guzzle 6 is available (`^6.5|7.0` in composer.json).
 
 ## Postcardware
 
