@@ -47,6 +47,15 @@ Run the tests with:
 $ composer test
 ```
 
+## Support
+
+| Version | Laravel Version | PHP Version |
+|---- |----|----|
+| 2.x | 8.x | ^7.3\|^8.0 |
+| 1.x | 7.x | \>=7.2 |
+
+Version 1.x will also work with Laravel 8 if Guzzle 6 is available (`^6.5|7.0` in composer.json).
+
 ## Postcardware
 
 This package is completely free to use. If it makes it to your production environment we would highly appreciate you sending us a postcard from your hometown! 👏🏼
