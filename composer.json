@@ -25,8 +25,8 @@
     },
     "require": {
         "php": "^7.3|^8.0",
-        "php-http/guzzle7-adapter": "^0.1.1",
-        "swisnl/geocoder-php-nationaal-georegister-provider": "^1.3.0",
+        "guzzlehttp/guzzle": "^7.8.1",
+        "swisnl/geocoder-php-nationaal-georegister-provider": "^1.6.0",
         "php-http/message": "^1.11"
     },
     "require-dev": {
