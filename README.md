@@ -60,7 +60,7 @@ Version 1.x will also work with Laravel 8 if Guzzle 6 is available (`^6.5|7.0` i
 
 This package is completely free to use. If it makes it to your production environment we would highly appreciate you sending us a postcard from your hometown! 👏🏼
 
-Our address is: CBYTE Software B.V., Parallelweg 27, 5223AL 's-Hertogenbosch, Netherlands.
+Our address is: Chabter, Kanaalstraat 12B, 5347KM Oss, Netherlands.
 
 ## License
 
