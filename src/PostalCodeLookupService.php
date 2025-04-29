@@ -6,8 +6,7 @@ use Chabter\PostalCodeLookup\Helpers\Format;
 use Exception;
 use Geocoder\Collection;
 use Geocoder\Query\GeocodeQuery;
-use Http\Adapter\Guzzle7\Client;
-use Http\Client\HttpClient;
+use GuzzleHttp\Client;
 use Swis\Geocoder\NationaalGeoregister\NationaalGeoregister;
 
 /**
@@ -28,9 +27,9 @@ class PostalCodeLookupService
 
     /**
      * PostalCodeLookupService constructor.
-     * @param HttpClient|null $client
+     * @param Client|null $client
      */
-    public function __construct(HttpClient $client = null)
+    public function __construct(Client $client = null)
     {
         if (!$client) {
             $client = new Client();

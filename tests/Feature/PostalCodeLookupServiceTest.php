@@ -21,6 +21,7 @@ class PostalCodeLookupServiceTest extends TestCase
         $this->assertNull($result->getHouseNumber());
         $this->assertNotNull($result->getStreet());
         $this->assertNotNull($result->getCity());
+        $this->assertNotNull($result->getCoordinates());
     }
 
     public function testValidAndFormattedPostalCodeWithHouseNumberLookupReturnsValidValues()
@@ -38,6 +39,7 @@ class PostalCodeLookupServiceTest extends TestCase
         $this->assertEquals($houseNumber, $result->getHouseNumber());
         $this->assertNotNull($result->getStreet());
         $this->assertNotNull($result->getCity());
+        $this->assertNotNull($result->getCoordinates());
     }
 
     public function testValidAndFormattedPostalCodeWithHouseNumberAndExtensionLookupReturnsValidValues()
@@ -55,6 +57,7 @@ class PostalCodeLookupServiceTest extends TestCase
         $this->assertEquals($houseNumber, $result->getHouseNumber());
         $this->assertNotNull($result->getStreet());
         $this->assertNotNull($result->getCity());
+        $this->assertNotNull($result->getCoordinates());
     }
 
     public function testValidAndUnformattedPostalCodeLookupReturnsValidValues()
@@ -71,6 +74,7 @@ class PostalCodeLookupServiceTest extends TestCase
         $this->assertNull($result->getHouseNumber());
         $this->assertNotNull($result->getStreet());
         $this->assertNotNull($result->getCity());
+        $this->assertNotNull($result->getCoordinates());
     }
 
     public function testValidAndUnformattedPostalCodeWithHouseNumberLookupReturnsValidValues()
@@ -90,6 +94,7 @@ class PostalCodeLookupServiceTest extends TestCase
         $this->assertEquals($expectedHouseNumber, $result->getHouseNumber());
         $this->assertNotNull($result->getStreet());
         $this->assertNotNull($result->getCity());
+        $this->assertNotNull($result->getCoordinates());
     }
 
     public function testValidAndUnformattedPostalCodeWithHouseNumberAndExtensionLookupReturnsValidValues()
@@ -109,6 +114,7 @@ class PostalCodeLookupServiceTest extends TestCase
         $this->assertEquals($expectedHouseNumber, $result->getHouseNumber());
         $this->assertNotNull($result->getStreet());
         $this->assertNotNull($result->getCity());
+        $this->assertNotNull($result->getCoordinates());
     }
 
     public function testInvalidPostalCodeLookupReturnsNull()
