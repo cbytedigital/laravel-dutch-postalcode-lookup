@@ -39,6 +39,7 @@ $address->getPostalCode() => '1012JS';
 $address->getHouseNumber() => 1; // or string including housenumber extension
 $address->getStreet() => 'Dam';
 $address->getCity() => 'Amsterdam';
+$address->getCoordinates() => [ latitude: 0.0000, longitude: 0.0000 ];
 ```
 
 ## Testing

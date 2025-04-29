@@ -3,6 +3,7 @@
 namespace Chabter\PostalCodeLookup\Models;
 
 use Geocoder\Location;
+use Geocoder\Model\Coordinates;
 
 class Address
 {
@@ -27,6 +28,11 @@ class Address
     private $city;
 
     /**
+     * @var null|Coordinates
+     */
+    private $coordinates;
+
+    /**
      * Address constructor.
      * @param Location $location
      */
@@ -36,6 +42,7 @@ class Address
         $this->houseNumber = $location->getStreetNumber();
         $this->postalCode = $location->getPostalCode();
         $this->city = $location->getLocality();
+        $this->coordinates = $location->getCoordinates();
     }
 
     public static function fromLocation(Location $location)
@@ -73,5 +80,13 @@ class Address
     public function getCity(): ?string
     {
         return $this->city;
+    }
+
+    /**
+     * @return Coordinates|null
+     */
+    public function getCoordinates(): ?Coordinates
+    {
+        return $this->coordinates;
     }
 }
