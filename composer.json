@@ -42,5 +42,10 @@
                 "PostalCodeLookupService": "Chabter\\PostalCodeLookup\\Facades\\PostalCodeLookupService"
             }
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     }
 }
