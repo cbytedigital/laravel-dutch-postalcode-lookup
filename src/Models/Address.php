@@ -33,6 +33,11 @@ class Address
     private $coordinates;
 
     /**
+     * @var null|string
+     */
+    private $province;
+
+    /**
      * Address constructor.
      * @param Location $location
      */
@@ -43,6 +48,7 @@ class Address
         $this->postalCode = $location->getPostalCode();
         $this->city = $location->getLocality();
         $this->coordinates = $location->getCoordinates();
+        $this->province = count($location->getAdminLevels()) > 0 ? $location->getAdminLevels()->get('1')->getName() : null;
     }
 
     public static function fromLocation(Location $location)
@@ -88,5 +94,13 @@ class Address
     public function getCoordinates(): ?Coordinates
     {
         return $this->coordinates;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getProvince(): ?string
+    {
+        return $this->province;
     }
 }
